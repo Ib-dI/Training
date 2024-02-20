@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* colors */
+    --color-dark-blue: #1A2036;
+    --color-light-blue: #252B42;
+    --color-light-blue-ico: #242B42;
+    --color-third-blue: #2E3650;
+    --color-dark-gray: #7F89A9;
+    --color-gray: #B1B9D8;
+    --color-light-gray: #B5BFE4;
+    --color-third-gray: #808FBE;
+    --color-purple: #8E66FF;
+    --color-plus: #8795C5;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Merriweather, sans-serif;
+    /* letter-spacing:.36px; */
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-blue);
+    color: var(--color-gray);
+}
+
+/* Container All-Groups */
+
+.section-groups {
+    width: 975px;
+    height: 662px;
+    background-color: var(--color-light-blue);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+
+}
+
+/* Navigation */
+
+.main-nav {
+    width: 88px;
+    height: 592px;
+    background-color: var(--color-dark-blue);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icones {
+    list-style-type: none;
+}
+.icones li {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 15px;
+}
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.active-icone,
+.icone:hover {
+    border-radius: 10px;
+    background-color: var(--color-light-blue-ico);
+}
+
+/* Group container*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 90px; */
+}
+
+/* Head */
+.head {
+    width: 752px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-title {
+    width: 132px;
+    display: flex;
+    gap: 4px;
+}
+.main-title img {
+    cursor: pointer;
+}
+.title {
+    font-size: 2.6rem;
+    cursor: default;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 102px;
+    height: 52px;
+    background-color: var(--color-light-blue);
+    border: 1px solid #1A2036;
+    border-radius: 10px;
+}
+
+.box-left,
+.box-right {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid #1A2036;
+}
+.box-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.active-btn {
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-blue);
+}
+
+/* Groups */
+
+.groups {
+    max-width: 752px;
+    max-height: 436px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.groups p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+/* Bloc */
+.bloc {
+    width: 173px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--color-dark-blue);
+    cursor: pointer;
+}
+/* ! A ajouter a la div contant les bloc */
+.accounts-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 860px;
+    max-height: 400px;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+/* ! A ajouter aux div de img et p */
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+    height: 112px;
+    width: 99%;
+    padding: 20px;
+    margin-bottom: 2px;
+}
+/* .ligne {
+    display: flex;
+} */
+.create,
+.bloc:hover  {
+    background-color: var(--color-third-blue);
+}
+.create p {
+    margin-top: 10px;
+    color: #8795C5;
+}
+.bloc h2 {
+    font-size: 1.8rem;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+.actif {
+    position: relative;
+}
+
+.actif::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 11px;
+    height: 11px;
+    transform: translateY(-50%);
+    border-radius: 11px;
+    background-color: var(--color-purple);
+    
+}
+/* Sélectionne la barre de défilement */
+::-webkit-scrollbar {
+    width: 10px;
+ /* Largeur de la barre de défilement */
+}
+
+/* Style de la piste (la partie de la barre de défilement qui n'est pas remplie) */
+::-webkit-scrollbar-track {
+    background-color: #2E3650; /* Couleur de fond de la piste */
+}
+
+/* Style de la poignée (la partie mobile de la barre de défilement) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark-blue); /* Couleur de la poignée */
+    border-radius: 5px; /* Bord arrondi de la poignée */
+}
+
+/* Style de survol de la poignée */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7F89A9; /* Couleur de survol de la poignée */
+}

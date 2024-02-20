@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onglets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://api.iconify.design/tabler:align-box-left-top-filled.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tabs">
+        <div 
+        role="tablist"
+        aria-label="tabs component"
+        class="tabs-btn-container">
+            <button
+            role="tab"
+            aria-controls="panel-1"
+            id="tab-1"
+            type="button"
+            aria-selected="true"
+            tabindex="0"
+            class="tab active-tab">
+                Rocket 🚀
+            </button>
+            <button
+            role="tab"
+            aria-controls="panel-2"
+            id="tab-2"
+            type="button"
+            aria-selected="false"
+            tabindex="-1"
+            class="tab">
+                Science 🧪
+            </button>
+            <button
+            role="tab"
+            aria-controls="panel-3"
+            id="tab-3"
+            type="button"
+            aria-selected="false"
+            tabindex="-1"
+            class="tab">
+                Food 🍉
+            </button>
+        </div>
+        <div
+        id="panel-1"
+        role="tabpanel"
+        aria-labelledby="tab-1"
+        tabindex="0"
+        class="tab-content active-tab-content">
+            <h3>Rocket 🚀</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sequi, minus laborum iusto voluptatibus eum. Ab sequi, perferendis accusamus doloribus eum eligendi vero facilis sunt beatae laborum tempore ex nisi, enim voluptas aliquid fuga eaque quia maxime ducimus excepturi. Iusto, similique nulla ducimus excepturi amet cumque voluptas laudantium aperiam. Ducimus.
+            </p>
+        </div>
+        <div
+        id="panel-2"
+        role="tabpanel"
+        aria-labelledby="tab-2"
+        tabindex="0"
+        class="tab-content">
+            <h3>Science 🧪</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis fugiat impedit, at facere ullam esse corporis, eum labore temporibus corrupti quam ipsam cum, expedita quae velit alias? Aut autem deleniti necessitatibus eum ab aperiam voluptatem saepe, cumque sunt quae dolores assumenda ut libero eligendi praesentium, eius nam tempora exercitationem placeat! Atque esse odit ipsam necessitatibus quod excepturi dolore architecto!
+            </p>
+        </div>
+        <div
+        id="panel-3"
+        role="tabpanel"
+        aria-labelledby="tab-3"
+        tabindex="0"
+        class="tab-content">
+            <h3>Food 🍉</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo obcaecati quam, quasi itaque officia beatae tempore temporibus veniam repellat odit! Quo ipsum deleniti dolor a quos nihil animi soluta quae est hic error nulla, sed cupiditate consequatur nesciunt, ea minima porro amet consectetur! Excepturi ad fuga perspiciatis laudantium blanditiis suscipit illum minus aspernatur mollitia! Alias, dolor dicta iure magni rem sunt eum. Sit velit esse repellendus nam fugit neque!
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

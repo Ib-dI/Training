@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+:root {
+    --heavy-blue: #0E0D46;
+    --light-purple: #8598FC;
+    --second-p: #C5C5F8;
+    --white: #ffffff;
+    --light-w: #E5E5E5;
+    --color-active: #faf2fe;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-w);
+}
+.container {
+    width: 80%;
+    width: 1103px;
+    height: 725px;
+    background-color: var(--white);
+    border-radius: 36px;
+    padding: 110px;
+}
+/* Header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: fit-content; */
+    margin-bottom: 40px;
+
+}
+.search-container {
+    position: relative;
+}
+.search-input {
+    font-family: inherit;
+    padding: 10px 20px 10px 45px;
+    border: 1px solid var(--second-p);
+    border-radius: 8px;
+    width: 283px;
+    height: 59px;
+    font-size: 1.4rem;
+    outline-color: var(--heavy-blue);
+    outline-width: 1px;
+}
+.search-button {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+}
+.search-button img {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+.donne {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.donne img {
+    width: 36px;
+    cursor: pointer;
+}
+.donne img:hover {
+    fill: #0E0D46;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--light-purple);
+    cursor: pointer;
+}
+.profile p {
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: var(--white);
+}
+/* Main container */
+
+h1, h2 {
+    font-family: Merriweather, sans-serif;
+    color: var(--heavy-blue);
+    font-weight: 900;
+    cursor: default;
+}
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 2.4rem;
+    
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.accounts-list {
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    height: 112px;
+    max-width: 99%;
+    padding: 20px;
+    margin-bottom: 2px;
+}
+
+li:nth-child(2) {
+    width: 135px;
+    cursor: default;
+}
+
+.active-list,
+.list:hover {
+    background-color: var(--color-active);
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid #e0c3ef;
+}
+.link,
+.nb-accounts {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.name-link a {
+    text-decoration: none;
+    color: #0e0d468c;
+}
+.points {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-image: url(assets/img/Group\ 5.svg);
+    background-position: center;
+    background-size: cover;
+}
+.active-points {
+    background-image: url(assets/img/Group\ 4.svg);
+    background-position: center;
+    background-size: cover;
+}
+.google {
+    width: 72px;
+    height: 72px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.google img {
+    width: 38px;
+
+}
+
+/* Sélectionne la barre de défilement */
+::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 2px; /* Largeur de la barre de défilement */
+}
+
+/* Style de la piste (la partie de la barre de défilement qui n'est pas remplie) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Couleur de fond de la piste */
+}
+
+/* Style de la poignée (la partie mobile de la barre de défilement) */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Couleur de la poignée */
+    border-radius: 5px; /* Bord arrondi de la poignée */
+}
+
+/* Style de survol de la poignée */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Couleur de survol de la poignée */
+}
+
+
+@media (max-width: 1130px) {
+    .container {
+        width: 900px;
+    }
+    .accounts-list {
+        width: 695px;
+    }
+}
+@media (max-width: 945px) {
+    .container {
+        width: 700px;
+        padding: 100px 75px;
+    }
+    .accounts-list {
+        width: 555px;
+    }
+}
+
+@media (max-width: 750px) {
+    li:nth-child(2) {
+        display: none;
+    }
+    .container {
+        width: 600px;
+    
+    }
+    .accounts-list {
+        width: 450px;
+    }
+}
+
+@media (max-width:525px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    .container {
+        display: block;
+        height: 100%;
+    }
+    .head {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .donne {
+        width: 100%;
+        order: 1;
+        justify-content: right;
+    }
+    .search-container {
+        order: 2;
+    }
+}

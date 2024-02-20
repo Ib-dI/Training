@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(249, 212, 153);
+}
+
+/* input style */
+.password-wrapper {
+    position: relative;
+    min-width: 300px;
+    margin-bottom: 15px;
+}
+.password-input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+}
+
+.password-input::placeholder {
+    color: black;
+}
+.input-type-toggler {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: url('./img/eye.svg') no-repeat center;
+    padding: 0;
+    border: none;
+    outline: none;
+    height: 16px;
+    width: 24px;
+}
+.input-type-toggler.active {
+    background: url('./img/eye-off.svg')
+    no-repeat
+    center;
+}

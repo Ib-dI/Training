@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primar-color: #25DAC5;
+  --seconary-color: #1E0E62;
+  --text-color: #15143961;
+  --font: "DM Sans","Poppins", sans-serif;
+  --fs-16: 1.6rem;
+  --fs-14: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-color);
+  font-size: var(--fs-16);
+}
+body .nav-container {
+  margin-top: 2rem;
+  padding: 4rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .nav-container img {
+  padding-left: 50px;
+}
+body .nav-container .nav-util {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+body .nav-container .nav-util .user-sign button {
+  border: none;
+  background: none;
+  color: var(--text-color);
+  font-size: var(--fs-16);
+  font-family: var(--font);
+  font-weight: 500;
+}
+body .nav-container .nav-util .user-sign button:not(:first-of-type) {
+  background-color: var(--primar-color);
+  color: antiquewhite;
+  padding: 10px 22px;
+  border-radius: 22px;
+  margin-left: 15px;
+}
+body .nav-container .nav-util ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+body .nav-container .nav-util ul li {
+  margin-right: 33px;
+}
+body .nav-container .nav-util ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 800;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 700px;
+}
+body .title {
+  color: var(--seconary-color);
+  font-size: 6.7rem;
+}
+body .descrip {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 70px;
+  margin-top: 35px;
+  font-weight: 800;
+  font-size: 2rem;
+}
+body .box-learn {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .box-learn button {
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background: none;
+  color: var(--primar-color);
+}
+body .box-learn button:not(:last-of-type) {
+  background-color: var(--primar-color);
+  color: aliceblue;
+  padding: 12px 35px;
+  border-radius: 35px;
+}
+
+@media (max-width: 750px) {
+  .nav-container {
+    width: 500px;
+  }
+  .nav-container img {
+    width: 125px;
+    padding: 0;
+    margin: -45px;
+  }
+  .nav-container .nav-util {
+    font-size: var(--fs-14);
+  }
+  .nav-container .nav-util .user-sign button {
+    font-size: 12px;
+  }
+  .nav-container .nav-util ul li {
+    margin-left: 0;
+  }
+  .nav-container h1 {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

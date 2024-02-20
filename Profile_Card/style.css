@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* colors */
+    --color-white: #ffffff;
+    --color-dark-purple: #1E1D2F;
+    --color-shade: #2D2C43;
+    --color-purple: #8F5AFF;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-purple);
+}
+
+.container {
+    z-index: 0;
+    position: relative;
+    width: 441px;
+    height: 276px;
+    background-color: var(--color-shade);
+    padding:  61px 101px 0 159px;
+    border-radius: 20px;
+}
+.container.no-before::before {
+    width: 0;
+    height: 0;
+    border: none;
+    background: none;
+}
+.container::before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 30px;
+    width: 94px;
+    height: 94px;
+    background: no-repeat center url('./assets/img/jan-kopriva-TcI_LGIOCVs-unsplash.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid #1E1D2F;
+}
+
+h1 {
+    font-family: Merriweather;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+p {
+    font-size: 1.2rem;
+}
+.details {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.likes,
+.views {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    border-radius: 30px;
+    height: 41px;
+    font-family: inherit;
+    background-color: var(--color-purple);
+    border: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 33px;
+    width: 120px;
+    transition: color .3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffffe2;
+    border: 1px solid #4F3F72;
+    color: #9072d2;
+}
+
+/* Folloing */
+
+.following {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-top: 50px;
+    width: 380px;
+    height: 407px;
+    background-color: var(--color-shade);
+    border-radius: 20px;
+}
+
+.profile-img {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background: no-repeat center url("./assets/img/karsten-winegeart-8buSHH2o6nE-unsplash.jpg");
+    background-size: cover;
+    border: 10px solid #1E1D2F;
+}
+.grad {
+    display: flex;
+    gap: 5px;
+}
+.btn-following {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+}
+.btn-following button {
+    margin-top: 0;
+    width: 180px;
+}
+.btn-unfollow {
+    color: var(--color-purple);
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+}
+.btn-unfollow:hover {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+}
+.message {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.message:hover {
+    background-color: #4F3F72;
+}
+
+.message img {
+    height: 26px;
+    transform: translateY(-5%);
+}

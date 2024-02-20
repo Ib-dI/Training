@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark-black: #111111;
+  --light-black: #1d1d1d;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 1.6rem;
+
+}
+.faq {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.title-container {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  cursor: default;
+}
+.main-title {
+  font-size: 4.2rem;
+}
+.accordeon{
+  width: 900px;
+}
+.details {
+  border-bottom: 2px dotted var(--dark-black);
+
+}
+.question {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  cursor: pointer;
+  gap: 5px;
+
+}
+.question p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.reponse {
+  padding-bottom: 32px;
+  display: none;
+}
+.visible{
+  display: block;
+}
+.rotation {
+  transform: rotate(90deg);
+}
+@media (max-width: 750px) {
+  .accordeon {
+    width: 600px;
+  }
+}
+@media (max-width: 525px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  .accordeon {
+    width: 375px;
+  }
+  .question p {
+    font-size: 1.6rem;
+  }
+  .reponse p {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+}
